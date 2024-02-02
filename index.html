@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container m-4">
+        <div class="card" style="width: auto;">
+            <div class="card-header bg-danger-subtle text-emphasis-danger">
+                <h3><strong>Payment form example</strong></h3>
+            </div>    
+            <div class="card-body m-2 py-3">
+                <div class="alert alert-warning" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    Some fields are missing
+                </div>
+            </div>
+
+            
+            <form class="row g-3 m-3">
+              <div class="col-5">
+                <label for="inputCard#" class="form-label">Card #</label>
+                <input type="text" class="form-control" id="inputCard#" placeholder="XXXXXXXXXXXX">
+              </div>
+              <div class="col-md-3">
+                <label for="inputCVC#" class="form-label">CVC #</label>
+                <input type="password" class="form-control" id="inputCVC#" placeholder="000">
+              </div>
+              <div class="col-md-4">
+                <label for="inputAmount" class="form-label">Amount $</label>
+                <input type="number" class="form-control" id="inputAmount" placeholder="Amount">
+              </div>
+              <div class="col-md-6">
+                <label for="inputFirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName">
+              </div>
+              <div class="col-md-6">
+                <label for="inputLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Pick a state</option>
+                  <option>México</option>
+                  <option>Ciudad de México</option>
+                  <option>Puebla</option>
+                  <option>Monterrey</option>
+                  <option>Jalisco</option>
+                  <option>Morelos</option>
+                  <option>Chihuahua</option>
+                  <option>Sonora</option>
+                  <option>Veracruz</option>
+                  <option>Yucatán</option>
+                  <option>Oaxaca</option>
+                  <option>Guerrero</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputPostalCode" class="form-label">Postal Code</label>
+                <input type="text" class="form-control" id="inputPostalCode">
+              </div>
+
+              <div class="col-md-6">
+                <p>We accept:</p>
+                <div>
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn bg-success-subtle text-emphasis-success" for="btnradio1">
+                      <img src="https://cdn.iconscout.com/icon/free/png-256/free-mastercard-3521564-2944982.png" width="35px" height="35px" class="rounded" alt="...">
+                    </label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn bg-success-subtle text-emphasis-success" for="btnradio2">
+                      <div class="text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" width="35px" height="35px" class="rounded" alt="...">
+                      </div>
+                    </label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn bg-success-subtle text-emphasis-success" for="btnradio3">
+                      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968288.png" width="35px" height="35px" class="rounded" alt="...">
+                    </label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn bg-success-subtle text-emphasis-success" for="btnradio4">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/2052px-American_Express_logo_%282018%29.svg.png" width="35px" height="35px" class="rounded" alt="...">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <input type="text" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="Add any notes here.">
+  <label for="floatingEmptyPlaintextInput"></label>
+              </div>
+
+            </form>
+
+            <div class="card-footer bg-danger-subtle text-emphasis-danger">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn bg-dark text-white me-md-2" type="button">Cancel</button>
+                    <button class="btn btn-primary" type="button">Send</button>
+                </div>
+            </div>
+          </div>
+    </div>
+      
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>      
+</body>
+</html>
